@@ -2,13 +2,14 @@
 
 Meteor Package that allows your app to be installed as web app on the home screen of your device.
 
+- Includes `appcache` package that caches the application code on the device for offline use.
+- Includes `ground:db` package that gives you the possibility to cache data (collections) for offline use.
+
 ## Installing
 
 1. `meteor add q42:installable-web-app`
 2. Create homescreen icons in different sizes
 3. Add a `/public/manifest.json` file, containing information on your app. Below is an example.
-4. works best with `meteor add appcache` for offline caching of code
-5. works best with `meteor add ground:db` for offline caching of data
 
 ```
 {

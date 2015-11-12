@@ -7,6 +7,9 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
+  api.use('appcache');
+  api.use('ground:db');
+
   api.addFiles('installable-web-app.js', 'server');
 
   if (typeof api.export !== 'undefined') {
