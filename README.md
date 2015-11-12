@@ -4,9 +4,11 @@ Meteor Package that allows your app to be installed as web app on the home scree
 
 ## Installing
 
-`meteor add q42:installable-web-app`
-
-Add a `/public/manifest.json` file, containing information on your app. Here's an example:
+1. `meteor add q42:installable-web-app`
+2. Create homescreen icons in different sizes
+3. Add a `/public/manifest.json` file, containing information on your app. Below is an example.
+4. works best with `meteor add appcache` for offline caching of code
+5. works best with `meteor add ground:db` for offline caching of data
 
 ```
 {
@@ -51,8 +53,8 @@ When visiting this website, the user can tap the ... at the top right and select
 
 ## Roadmap
 
-*These features are yet to be installed*
+*These features are yet to be built*
 
-To display a notification for a user to install this webapp, use
-
-`{{> webAppRequestInstallation}}`
+- Support for Chrome version M31-M38 (release date 2013-11-12), works with `meta` tags in the header instead of a manifest file.
+- Expose a variable that tells if the user is using a browser or a homescreen link. That way a user can be asked to install to homescreen.
+- While we're at it, why not also add a manifest file for Firefox OS? https://developer.mozilla.org/en-US/Apps/Build/Building_apps_for_Firefox_OS
