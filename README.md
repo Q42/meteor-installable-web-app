@@ -41,6 +41,8 @@ Add a `/public/manifest.json` file, containing information on your app. Here's a
 
 ### Android
 
+*supported from Chrome version M39, release date 2014-11-12*
+
 When visiting this website, the user can tap the ... at the top right and select "add to homescreen". The icon you provided will be used on the homescreen. When the homescreen icon is tapped, your web app will open with a fixed orientation and without address bar (if you specified this in your manifest.json).
 
 ### iOS
